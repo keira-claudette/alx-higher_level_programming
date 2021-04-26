@@ -17,8 +17,6 @@ int check_cycle(listint_t *list)
 			break;
 			return (1);
 	}
-	if (temp == NULL)
-		return (0);
+	return (0);
 
-	return (1);
 }
