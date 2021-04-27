@@ -27,7 +27,7 @@ Tis is a function that computes a to the power of b and return the value.
 - ###### 12-fizzbuzz.py <br>
 Tihs is a function that prints the numbers from 1 to 100 separated by a space.
 - ###### 13-insert_number.c
-	-Technical interview preparation: <br>
+	- Technical interview preparation: <br>
 	a function in C that inserts a number into a sorted singly linked list.
 - ###### lists.h
 Header file containing prototypes for functons used in C programs in this repository.
