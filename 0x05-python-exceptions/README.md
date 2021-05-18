@@ -19,4 +19,4 @@ a function that divides element by element 2 lists.
 a function that raises a type exception.\n
 Prototype: `def raise_exception():`
 
-- No modules were imported for these tasks
+- `No modules were imported for these tasks`
