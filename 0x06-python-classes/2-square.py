@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Module has an empty class Square"""
 
+
 class Square:
     """ Represents a Square that defines a square by: (based on 1-square.py)
     Private instance attribute: size.
