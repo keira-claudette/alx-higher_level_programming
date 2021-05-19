@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" This is an empty module"""
+
+
 class Square:
     """ Defines/represents a square"""
     def __init__(self, size=0):
@@ -9,6 +12,7 @@ class Square:
     def size(self):
         """retrieving the data"""
         return self.__size
+
     @size.setter
     def size(Self, value):
         """"assigns value to size"""

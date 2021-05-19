@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" This is an empty module"""
+
+
 class Square:
     """ Represents a square.
     private instance attrtribute size
@@ -7,8 +10,7 @@ class Square:
     Public instance method: def area(self).
     Public instance method: def my_print(self).
     """
-
-def __init__(self, size=0, position=(0, 0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Initializes the data."""
         self.size = size
         self.position = position
