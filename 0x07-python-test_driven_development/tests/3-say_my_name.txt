@@ -1,0 +1,31 @@
+____________________________
+Module - ``3-say_my_name``
+____________________________
+
+Function - ``say_my_name``
+---------------------------
+
+To use this function, import it as so:
+   say_my_name = __import__('3-say_my_name').say_my_name
+
+To test, let's use these interactive sessions:
+   >>> say_my_name("Claudette", "keira")
+   My name is Claudette Keira
+
+   >>> say_my_name(4, 4)
+   Traceback (most recent call last):
+   TypeError: first_name must be a string
+
+   >>> say_my_name('Steve', 4)
+   Traceback (most recent call last):
+   TypeError: last_name must be a string
+
+   >>> say_my_name(Sam)
+   My name is Sam
+
+   >>> say_my_name("", "")
+   My name is
+
+   >>> say_my_name()
+   Traceback (most recent call last):
+   TypeError: say_my_name() missing 1 required positional argument: 'first_name'
