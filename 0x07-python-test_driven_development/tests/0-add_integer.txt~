@@ -1,0 +1,28 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Module - ``0-add_integer``
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Function - ``add_integer``
+--------------------------
+
+To use, import the function:
+   >>> add_integer = __import__("0-add_integer").add_integer
+
+Testing it:
+	>>> add_integer(3, 3)
+	6
+
+	>>> add_integer(3, 3.0)
+	6
+
+	>>> add_integer(3)
+	101
+
+	>>> add_integer(3, -3)
+	0
+
+	>>> add_integer(3, "string")
+
+
+	>>> add_integer("string1", "strong")
+
