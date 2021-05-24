@@ -6,7 +6,7 @@ Function - ``say_my_name``
 ---------------------------
 
 To use this function, import it as so:
-   say_my_name = __import__('3-say_my_name').say_my_name
+   >>> say_my_name = __import__('3-say_my_name').say_my_name
 
 To test, let's use these interactive sessions:
    >>> say_my_name("Claudette", "keira")
