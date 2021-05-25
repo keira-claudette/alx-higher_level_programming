@@ -2,13 +2,16 @@ ____________________________
 Module - ``4-print_square``
 ____________________________
 
+
 Function - ``print_square``
 ----------------------------
 
 To use the function, let's import it:
+
    >>> print_square = __import('4-print_square').print_square
 
 Now let's test it:
+
       >>> print_square(4)
       ####
       ####
