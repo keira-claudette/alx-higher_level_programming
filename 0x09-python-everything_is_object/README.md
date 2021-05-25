@@ -1,3 +1,3 @@
 ## Python - Everything is object
 
-This files constain answers to tests
+These files contain answers to tests questions
