@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module: 5-base_geometry
+Module: 7-base_geometry
 
 describes an empty class BaseGeometry
 """
@@ -15,7 +15,7 @@ class BaseGeometry:
 
     def integer_validator(self, name, value):
         """ validates value"""
-        if isinstance(value, int):
+        if type(value) is int:
             if value <= 0:
                 raise ValueError("<name> must be greater than 0")
         else:
