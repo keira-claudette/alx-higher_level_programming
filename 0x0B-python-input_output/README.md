@@ -1,4 +1,5 @@
-General Concepts:
+## Python - Input/Output
+### General Concepts:
       - How to open a file
       - How to write text in a file
       - How to read the full content of a file
@@ -12,7 +13,7 @@ General Concepts:
       - How to convert a Python data structure to a JSON string
       - How to convert a JSON string to a Python data structure
 
- Tasks:
+ ##### Tasks:
       - 0-read_file.py
       a function that reads a text file (UTF8) and prints it to stdout:
 
