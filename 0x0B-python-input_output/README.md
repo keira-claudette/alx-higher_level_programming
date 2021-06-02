@@ -18,11 +18,11 @@
       a function that reads a text file (UTF8) and prints it to stdout:
 
       - 1-write_file.py
-      a function that writes a string to a text file (UTF8) and <br>
+      a function that writes a string to a text file (UTF8) and
       returns the number of characters written:
 
       - 2-append_write.py
-      a function that appends a string at the end of a text file (UTF8) and <br>
+      a function that appends a string at the end of a text file (UTF8) and
       returns the number of characters added:
       Prototype: `def append_write(filename="", text=""):`
 
@@ -44,12 +44,12 @@
       Prototype: `def load_from_json_file(filename):`
 
       - 7-add_item.py
-      a script that adds all arguments to a Python list, and <br>
+      a script that adds all arguments to a Python list, and
       then save them to a file:
 
       - 8-class_to_json.py
-      a function that returns the dictionary description with simple <br>
-      data structure (list, dictionary, string, integer and boolean) <br>
+      a function that returns the dictionary description with simple
+      data structure (list, dictionary, string, integer and boolean)
       for JSON serialization of an object:
 
       - 9-student.py
