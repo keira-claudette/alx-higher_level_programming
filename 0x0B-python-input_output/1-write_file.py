@@ -1,6 +1,5 @@
 #!/usr/bin/pyhton3
-"""
-Module: 1-write_file
+"""Module: 1-write_file
 Contains write_file() function that returns the number
 of characters written
 """
