@@ -1,0 +1,70 @@
+~~~~~~~~~~~~~~~~~~
+Module: 1-my_list
+~~~~~~~~~~~~~~~~~~
+
+Class: MyList
+Function: print_sorted()
+_________________________
+
+To test let's import the class:
+
+   >>> MyList = __import__('1-my_list').MyList
+
+The tests:
+
+    >>> list1 = MyList()
+
+    >>> list1
+    []
+
+    >>> list1.append(1)
+
+    >>> list1.append(9)
+
+    >>> list1.append(3)
+
+    >>> list1.append(2)
+
+    >>> list1
+    [1, 9, 3, 2]
+
+    >>> list1.print_sorted()
+    [1, 2, 3, 9]
+
+    >>> list1
+    [1, 9, 3, 2]
+
+    >>> list2 = MyList()
+
+    >>> list2
+    []
+
+    >>> list2.append('h')
+
+    >>> list2.append('o')
+
+    >>> list2.append('a')
+
+    >>> list2
+    ['h', 'o', 'a']
+
+    >>> list2.print_sorted()
+    ['a', 'h', 'o']
+
+    >>> list3 = MyList()
+
+    >>> list3
+    []
+
+    >>> list3.append("house")
+
+    >>> list3
+    ['house']
+
+    >>> list3.append("bell")
+
+    >>> list3
+    ['house', 'bell']
+
+    >>> list3.print_sorted()
+    ['bell', 'house']

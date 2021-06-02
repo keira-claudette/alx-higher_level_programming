@@ -1,0 +1,17 @@
+~~~~~~~~~~~~~~~~~~
+Module: 1-my_list
+~~~~~~~~~~~~~~~~~~
+
+Class: MyList
+Function: print_sorted()
+_________________________
+
+To test let's import the class:
+
+   >>> MyList = __import__('1-my_list').MyList
+
+The tests:
+
+   >>> list1 = MyList()
+
+   >>>  
