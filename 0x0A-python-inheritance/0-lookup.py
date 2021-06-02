@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-module 0-lookup describes a function that lists available attributes and methods
+module 0-lookup describes a function that
+lists available attributes and methods
 """
 
 
