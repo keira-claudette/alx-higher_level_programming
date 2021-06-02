@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """Module: 1-write_file
 Contains write_file() function that returns the number
 of characters written
