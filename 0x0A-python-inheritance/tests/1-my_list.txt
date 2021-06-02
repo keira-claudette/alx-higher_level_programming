@@ -68,3 +68,24 @@ The tests:
 
     >>> list3.print_sorted()
     ['bell', 'house']
+
+    >>> list4 = MyList()
+
+    >>> list4
+    []
+
+    >>> list4.append(-1)
+
+    >>> list4.append(0)
+
+    >>> list4.append(-4)
+
+    >>> list4.append(4)
+
+    >>> list4.append(1)
+
+    >>> list4
+    [-1, 0, -4, 4, 1]
+
+    >>> list4.print_sorted()
+    [-4, -1, 0, 1, 4]
