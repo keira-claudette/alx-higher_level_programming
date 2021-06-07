@@ -7,50 +7,88 @@ class Rectangle(Base):
     """ Rectangle inherits from Base"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ Instantiation"""
+        """ Instantiation of instance attributes"""
 
-        super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
+        super().__init__(id)
 
         @property
         def width(self):
-            """ A getter for width"""
+            """ Fetches width"""
             return self.__width
-
-        @width.setter
-        def width(self, value):
-            """Sets width to value"""
-            self.__width = value
 
         @property
         def height(self):
-            """ A getter for height"""
+            """Fecthes private attribute height"""
             return self.__height
-
-        @height.setter
-        def height(self, value):
-            """Sets height to value"""
-            self.__height = value
 
         @property
         def x(self):
-            """ A getter for x"""
+            """Retrivies private attribute x"""
             return self.__x
-
-        @x.setter
-        def x(self, value):
-            """Sets x to value"""
-            self.__x = value
 
         @property
         def y(self):
-            """ A getter for y"""
+            """ Retrives private attribute y"""
             return self.__y
+
+        @width.setter
+        def width(self, value):
+            """validates and assigns value to width"""
+            if isinstance(value, int):
+                self.__width = value
+            else:
+                raise TypeError("width must be an integer")
+
+            if width <= 0:
+                raise ValueError("width must be > 0")
+
+        @height.setter
+        def height(self, value):
+            """Validates value and assigns to height"""
+            if isinstance(value, int):
+                self.__height = value
+            else:
+                raise TypeError("height must be an integer")
+
+            if height <= 0:
+                raise ValueError("height must be > 0")
+
+        @x.setter
+        def x(self, value):
+            """ Validates value and assigns it to x"""
+            if isinstance(value, int):
+                self.__x = value
+            else:
+                raise TypeError("x must be an integer")
+
+            if x <= 0:
+                raise ValueError("x must be >= 0")
 
         @y.setter
         def y(self, value):
-            """Sets y to value"""
-            self.__y = value
+            """ Validates and assigns value to y"""
+            if isinstance(value, int):
+                self.__y = value
+            else:
+                raise TypeError("Y must be an integer")
+
+            if y <= 0:
+                raise ValueError("y must be >= 0")
+
+        def area(self):
+            """Computes area of a reactangle"""
+
+            return self.__width * self.__height
+
+        def display(self):
+            """ Prints to stdout the Rectangle instance
+            with the character #"""
+
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    print("#", end="")
+            print()
