@@ -12,6 +12,10 @@ class Rectangle(Base):
         super().__init__(id)
         self.__width = width
         self.__height = height
+        if type(self.__height) != int:
+            raise TypeError("height must be an integer")
+        if self.__height <= 0:
+            raise ValueError("height must be > 0")
         self.__x = x
         self.__y = y
 
