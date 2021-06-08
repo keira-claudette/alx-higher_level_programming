@@ -29,7 +29,7 @@ class Base:
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         if (type(list_dictionaries) != list or
-            not all(type(dicts) == dict for dicts in list_dictionaries)):
+                not all(type(dicts) == dict for dicts in list_dictionaries)):
             raise TypeError("list_dictionaries must be a list of dictionaries")
         return json.dumps(list_dictionaries)
 
