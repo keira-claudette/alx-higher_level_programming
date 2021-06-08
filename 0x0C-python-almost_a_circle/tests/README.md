@@ -1,1 +1,1 @@
-## tests for classes Base Rectangle and  Square
+## tests for classes: Base, Rectangle and  Square
