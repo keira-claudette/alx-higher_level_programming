@@ -9,66 +9,98 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """ Instantiation of instance attributes"""
 
+        super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
-        super().__init__(id)
 
     @property
     def width(self):
-        """ Fetches width"""
+        """
+            getter function for __width
+            Returns: width
+        """
         return self.__width
-
-    @property
-    def height(self):
-        """Fecthes private attribute height"""
-        return self.__height
-
-    @property
-    def x(self):
-        """Retrivies private attribute x"""
-        return self.__x
-
-    @property
-    def y(self):
-        """ Retrives private attribute y"""
-        return self.__y
 
     @width.setter
     def width(self, value):
-        """validates and assigns value to width"""
-        if type(value) is not int:
+        """
+            setter function for width.
+            Args:
+                value (int): value to be set.
+        """
+        if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
+
         self.__width = value
+
+    @property
+    def height(self):
+        """
+            getter function for height
+            Returns: height
+        """
+        return self.__height
 
     @height.setter
     def height(self, value):
-        """Validates value and assigns to height"""
-        if type(value) is not int:
+        """
+            setter function for height
+            Args:
+                value (int): value to be set.
+        """
+        if type(value) != int:
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
+
         self.__height = value
+
+    @property
+    def x(self):
+        """
+            getter function for x.
+            Returns: x
+        """
+        return self.__x
 
     @x.setter
     def x(self, value):
-        """ Validates value and assigns it to x"""
-        if type(value) is not int:
+        """
+            setter function for x.
+            Args:
+                value (int): value to be set.
+        """
+        if type(value) != int:
             raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
+
         self.__x = value
+
+    @property
+    def y(self):
+        """
+            getter function for y
+            Returns: y
+        """
+        return self.__y
 
     @y.setter
     def y(self, value):
-        """ Validates and assigns value to y"""
-        if type(value) is not int:
+        """
+            setter function for y
+            Args:
+                value (int): value to be set.
+        """
+        if type(value) != int:
             raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
+
         self.__y = value
 
     def area(self):
