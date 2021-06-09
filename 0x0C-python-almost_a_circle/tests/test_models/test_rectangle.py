@@ -1,9 +1,22 @@
+#!/usr/bin/python3
 """ Tests for class Rectangle"""
 
-
+import pep8
+import os
 import unittest
 from models.rectangle import Rectangle
 from models.base import Base
+
+class TestPep8(unittest.TestCase):
+    """Tests pep8 guidelines for models/rectangle.py"""
+    def test_pep8(self):
+        """Tests pep8"""
+        style = pep8.StyleGuide(quiet=False)
+        results = 0
+        files = ["models/rectangle.py", "tests/test_models/test_rectangle.py"]
+        results += style.check_files(files).total_errors
+        self.assertEqual(results, 0, 'Fix pep8')
+
 
 class TestRectangle(unittest.TestCase):
     """ TestRectangle inherits all atrributes from unittest.TestCase"""
@@ -170,5 +183,3 @@ class TestRectangle(unittest.TestCase):
         self.assertTrue(hasattr(r0, 'display'))
         Base._Base__nb_objects = 0
 
-if __name__ == '__main__':
-    unittest.main()
