@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """ Tests for class Rectangle"""
 
 
@@ -14,10 +13,11 @@ class TestRectangle(unittest.TestCase):
         rect = Rectangle(1, 1)
         self.assertIsInstance(rect, Base)
         self.assertIsInstance(rect, Rectangle)
+        Base.__nb_objects = 0
 
     def test_nb_attr(self):
         rect = Rectangle(1, 1)
-        self.assertTrue(hasattr(rect, '__nb_objects'))
+        self.assertTrue(hasattr(rect, 'rect.__nb_objects'))
         Base.__nb_objects = 0
 
     def test_id(self):
