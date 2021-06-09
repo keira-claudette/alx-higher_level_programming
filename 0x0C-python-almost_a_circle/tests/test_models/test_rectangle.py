@@ -26,105 +26,86 @@ class TestRectangle(unittest.TestCase):
         rect = Rectangle(1, 1)
         self.assertIsInstance(rect, Base)
         self.assertIsInstance(rect, Rectangle)
-        Base.__nb_objects = 0
 
     def test_nb_attr(self):
         rect = Rectangle(1, 1)
         self.assertTrue(hasattr(rect, 'rect.__nb_objects'))
-        Base.__nb_objects = 0
 
     def test_id(self):
         rect = Rectangle(1, 1)
         self.assertTrue(hasattr(rect, 'id'))
-        Base.__nb_objects = 0
 
     def test_width(self):
         rect = Rectangle(1, 1)
         self.assertTrue(hasattr(rect, 'width'))
-        Base.__nb_objects = 0
 
     def test_width_value(self):
         rect = Rectangle(1, 1)
         self.assertEqual(rect.width, 1)
-        Base.__nb_objects = 0
 
     def test_width_string(self):
         self.assertRaises(TypeError, Rectangle, "string", 1)
         self.assertRaisesRegex(TypeError, "width must be an integer", Rectangle,
                                "string", 1)
-        Base.__nb_objects = 0
 
     def test_width_neg(self):
         self.assertRaises(ValueError, Rectangle, -1, 1)
         self.assertRaisesRegex(ValueError, "width must be > 0", Rectangle, -1,
                                1)
-        Base.__nb_objects = 0
 
     def test_height(self):
         r0 = Rectangle(1, 1)
         self.assertTrue(hasattr(r0, 'height'))
-        Base.__nb_objects = 0
 
     def test_height_value(self):
         r0 = Rectangle(1, 1)
         self.assertEqual(r0.height, 1)
-        Base.__nb_objects = 0
 
     def test_height_string(self):
         self.assertRaises(TypeError, Rectangle, 1, "string")
         self.assertRaisesRegex(TypeError, "height must be an integer",
                                Rectangle, 1, "string")
-        Base.__nb_objects = 0
 
     def test_height_neg(self):
         self.assertRaises(ValueError, Rectangle, 1, -1)
         self.assertRaisesRegex(ValueError, "height must be > 0", Rectangle, 1,
                                -1)
-        Base.__nb_objects = 0
 
     def test_x(self):
         r0 = Rectangle(1, 1)
         self.assertTrue(hasattr(r0, 'x'))
-        Base.__nb_objects = 0
 
     def test_x_value(self):
         r0 = Rectangle(1, 1, 1)
         self.assertEqual(r0.x, 1)
-        Base.__nb_objects = 0
 
     def test_x_string(self):
         self.assertRaises(TypeError, Rectangle, 1, 1, "string")
         self.assertRaisesRegex(TypeError, "x must be an integer", Rectangle, 1,
                                1, "string")
-        Base.__nb_objects = 0
 
     def test_x_neg(self):
         self.assertRaises(ValueError, Rectangle, 1, 1, -1)
         self.assertRaisesRegex(ValueError, "x must be >= 0", Rectangle, 1, 1,
                                -1)
-        Base.__nb_objects = 0
 
     def test_y(self):
         r0 = Rectangle(1, 1)
         self.assertTrue(hasattr(r0, 'y'))
-        Base.__nb_objects = 0
 
     def test_y_value(self):
         r0 = Rectangle(1, 1, 1, 1)
         self.assertEqual(r0.y, 1)
-        Base.__nb_objects = 0
 
     def test_y_string(self):
         self.assertRaises(TypeError, Rectangle, 1, 1, 1, "string")
         self.assertRaisesRegex(TypeError, "y must be an integer",
                                 Rectangle, 1, 1, 1, "string")
-        Base.__nb_objects = 0
 
     def test_y_neg(self):
         self.assertRaises(ValueError, Rectangle, 1, 1, 1, -1)
         self.assertRaisesRegex(ValueError, "y must be >= 0",
                                Rectangle, 1, 1, 1, -1)
-        Base.__nb_objects = 0
 
     def test_automatic(self):
         r1 = Rectangle(1, 1)
@@ -137,7 +118,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r4.id, 4)
         r5 = Rectangle(1, 1)
         self.assertEqual(r5.id, 5)
-        Base.__nb_objects = 0
 
     def test_manual(self):
         r1 = Rectangle(1, 1, 0, 0, 45)
@@ -150,7 +130,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r4.id, 78)
         r5 = Rectangle(1, 1, 0, 0, 89)
         self.assertEqual(r5.id, 89)
-        Base.__nb_objects = 0
 
     def test_mixed(self):
         r1 = Rectangle(1, 1)
@@ -163,8 +142,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r4.id, 78)
         r5 = Rectangle(1, 1)
         self.assertEqual(r5.id, 3)
-        Base.__nb_objects = 0
-
 
     def test_area(self):
         rect_1 = Rectangle(5, 4, 1, 1)
@@ -176,10 +153,7 @@ class TestRectangle(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             rect_3.area()
-        Base.__nb_objects = 0
 
     def test_display(self):
         r0 = Rectangle(1, 1)
         self.assertTrue(hasattr(r0, 'display'))
-        Base._Base__nb_objects = 0
-
