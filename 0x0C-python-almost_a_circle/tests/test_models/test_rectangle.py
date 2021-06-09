@@ -98,7 +98,7 @@ class TestRectangle(unittest.TestCase):
         r2 = Rectangle(1, 1)
         self.assertEqual(r2.id, 2)
         r5 = Rectangle(1, 1)
-        self.assertEqual(r5.id, 5)
+        self.assertEqual(r5.id, 3)
 
     def test_manual(self):
         r1 = Rectangle(1, 1, 0, 0, 45)
