@@ -61,8 +61,6 @@ class Base:
         """Returns an instance with all attributes already set.
         """
         dummy_obj = cls(1, 1)
-        if cls.__name__ = 'Square':
-            dummy_obj = cls(1)
         dummy_obj.update(**dictionary)
         return dummy_obj
 
