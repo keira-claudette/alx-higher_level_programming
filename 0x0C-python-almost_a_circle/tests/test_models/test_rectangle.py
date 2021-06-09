@@ -7,17 +7,6 @@ import unittest
 from models.rectangle import Rectangle
 from models.base import Base
 
-class TestPep8(unittest.TestCase):
-    """Tests pep8 guidelines for models/rectangle.py"""
-    def test_pep8(self):
-        """Tests pep8"""
-        style = pep8.StyleGuide(quiet=False)
-        results = 0
-        files = ["models/rectangle.py", "tests/test_models/test_rectangle.py"]
-        results += style.check_files(files).total_errors
-        self.assertEqual(results, 0, 'Fix pep8')
-
-
 class TestRectangle(unittest.TestCase):
     """ TestRectangle inherits all atrributes from unittest.TestCase"""
 
@@ -26,10 +15,6 @@ class TestRectangle(unittest.TestCase):
         rect = Rectangle(1, 1)
         self.assertIsInstance(rect, Base)
         self.assertIsInstance(rect, Rectangle)
-
-    def test_nb_attr(self):
-        rect = Rectangle(1, 1)
-        self.assertTrue(hasattr(rect, 'rect.__nb_objects'))
 
     def test_id(self):
         rect = Rectangle(1, 1)
@@ -112,8 +97,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r1.id, 1)
         r2 = Rectangle(1, 1)
         self.assertEqual(r2.id, 2)
-        r3 = Rectangle(1, 1)
-        self.assertEqual(r3.id, 3)
         r4 = Rectangle(1, 1)
         self.assertEqual(r4.id, 4)
         r5 = Rectangle(1, 1)
@@ -136,8 +119,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r1.id, 1)
         r2 = Rectangle(1, 1, 0, 0, 56)
         self.assertEqual(r2.id, 56)
-        r3 = Rectangle(1, 1)
-        self.assertEqual(r3.id, 2)
         r4 = Rectangle(1, 1, 0, 0, 78)
         self.assertEqual(r4.id, 78)
         r5 = Rectangle(1, 1)
@@ -150,9 +131,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(rect_1.area(), 20)
         with self.assertRaises(TypeError):
             rect_2.area()
-
-        with self.assertRaises(ValueError):
-            rect_3.area()
 
     def test_display(self):
         r0 = Rectangle(1, 1)
