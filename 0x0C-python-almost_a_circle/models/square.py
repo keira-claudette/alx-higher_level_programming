@@ -23,12 +23,12 @@ class Square(Rectangle):
         return s
 
     @property
-    def size(self):
+    def size():
         """ Returns private attribute self"""
         return self.__size
 
     @size.setter
-    def size(self, value):
+    def size(value):
         """Validates value and assigns it to private attribute size"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
