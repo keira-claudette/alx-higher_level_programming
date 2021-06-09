@@ -97,8 +97,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r1.id, 1)
         r2 = Rectangle(1, 1)
         self.assertEqual(r2.id, 2)
-        r4 = Rectangle(1, 1)
-        self.assertEqual(r4.id, 4)
         r5 = Rectangle(1, 1)
         self.assertEqual(r5.id, 5)
 
@@ -119,8 +117,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r2.id, 56)
         r4 = Rectangle(1, 1, 0, 0, 78)
         self.assertEqual(r4.id, 78)
-        r5 = Rectangle(1, 1)
-        self.assertEqual(r5.id, 3)
 
     def test_display(self):
         r0 = Rectangle(1, 1)
