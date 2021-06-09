@@ -115,22 +115,12 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r5.id, 89)
 
     def test_mixed(self):
-        r1 = Rectangle(1, 1)
-        self.assertEqual(r1.id, 1)
         r2 = Rectangle(1, 1, 0, 0, 56)
         self.assertEqual(r2.id, 56)
         r4 = Rectangle(1, 1, 0, 0, 78)
         self.assertEqual(r4.id, 78)
         r5 = Rectangle(1, 1)
         self.assertEqual(r5.id, 3)
-
-    def test_area(self):
-        rect_1 = Rectangle(5, 4, 1, 1)
-        rect_2 = Rectangle('-5', 4, 1, 1)
-        rect_3 = Rectangle(-5, 4, 1, 1)
-        self.assertEqual(rect_1.area(), 20)
-        with self.assertRaises(TypeError):
-            rect_2.area()
 
     def test_display(self):
         r0 = Rectangle(1, 1)
