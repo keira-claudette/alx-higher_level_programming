@@ -130,34 +130,18 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """ assigns an argument to each attribute"""
+        attributes = ['id', 'width', 'height', 'x', 'y']
+        for idx, x in enumerate(args):
+            if idx >= len(attributes):
+                return
 
-        if args is not None and len(args) != 0:
-            if len(args) >= 1:
-                if type(args[0]) != int and args[0] is not None:
-                    raise TypeError("id must be an integer")
-                self.id = args[0]
-            if len(args) > 1:
-                self.__width = args[1]
-            if len(args) > 2:
-                self.__height = args[2]
-            if len(args) > 3:
-                self.__x = args[3]
-            if len(args) > 4:
-                self.__y = args[4]
-        else:
-            for key, value in kwargs.items():
-                if key == "id":
-                    if type(value) != int and value is not None:
-                        raise TypeError("id must be an integer")
-                    self.id = value
-                if key == "width":
-                    self.__width = value
-                if key == "height":
-                    self.__height = value
-                if key == "x":
-                    self.__x = value
-                if key == "y":
-                    self.__y = value
+            self.__setattr__(attributes[idx], x)
+
+        if args:
+            return
+
+        for k, v in kwargs.items():
+            self.__setattr__(k, v)
 
     def to_dictionary(self):
         """Returns the dictionary representation of a Rectangle."""
