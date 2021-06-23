@@ -89,3 +89,9 @@ The tests:
 
     >>> list4.print_sorted()
     [-4, -1, 0, 1, 4]
+
+    >>> new_l = MyList()
+
+    >>> new_l.print_sorted()
+    []
+    
