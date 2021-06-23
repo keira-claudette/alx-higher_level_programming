@@ -22,7 +22,7 @@ class Square(Rectangle):
     def __str__(self):
         """ prints formatted string"""
 
-        return str("[Square]{}/{}".format(self.__size, self.__size))
+        return str("[Square] {}/{}".format(self.__size, self.__size))
 
     def area(self):
         """Computes the area of square and overrites
