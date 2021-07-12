@@ -34,7 +34,7 @@ To run the srcipts, install MySQL server
    $
 ```
 
-##Note:
+## Note:
 If you have some issues to upgrade to 5.7, t hesitate to cleanup your server of any MySQL packages:
    ```
    sudo apt-get remove --purge mysql-server mysql-client mysql-common
