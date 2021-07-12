@@ -2,17 +2,18 @@
 To run the srcipts, install MySQL server
 
 ## Install MySQL 5.7 on Ubuntu 14.04 LTS
-   >
-   > $ echo 'deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-5.7-dmr' | sudo tee -a /etc/apt/sources.list
-   > $ sudo apt-get update
-   > $ sudo apt-get install mysql-server-5.7
-   > ...
-   > $ mysql --version
-   > mysql  Ver 14.14 Distrib 5.7.8-rc, for Linux (x86_64) using  EditLine wrapper
-   > $
+```
+    $ echo 'deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-5.7-dmr' | sudo tee -a /etc/apt/sources.list
+    $ sudo apt-get update
+    $ sudo apt-get install mysql-server-5.7
+    ...
+    $ mysql --version
+    mysql  Ver 14.14 Distrib 5.7.8-rc, for Linux (x86_64) using  EditLine wrapper
+    $
+```
 
 ## Connect to your MySQL server:
-
+```
    $ mysql -hlocalhost -uroot -p
    Password:
    Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -31,11 +32,13 @@ To run the srcipts, install MySQL server
    mysql> quit
    Bye
    $
+```
 
 ##Note:
 If you have some issues to upgrade to 5.7, t hesitate to cleanup your server of any MySQL packages:
-   `sudo apt-get remove --purge mysql-server mysql-client mysql-common`
-
+   ```
+   sudo apt-get remove --purge mysql-server mysql-client mysql-common
+```
 
 # Tasks
 
