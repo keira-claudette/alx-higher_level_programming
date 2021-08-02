@@ -8,6 +8,6 @@
 
 ###### Relational database management system
 
-<img src="https://www.computerhope.com/jargon/j/javascript.png" height=auto />
+<img src="https://www.computerhope.com/jargon/j/javascript.png" width ="160" height=auto />
 
 ###### Scripting and front-end web development
