@@ -1,5 +1,5 @@
 # JavaScript
-This repository covers JavaScript basics.
+This directory covers JavaScript basics.
 In order to run the scripts, you should install Node 10.
 ##### Intsalling Node 10
 ```
@@ -11,12 +11,14 @@ sudo apt-get install --force-yes nodejs
 ```
 sudo npm install semistandard --global
 ```
+<br>
 [![js-semistandard-style](https://raw.githubusercontent.com/standard/semistandard/master/badge.svg)](https://github.com/standard/semistandard)
 # Tasks
+<br>
 ##### 0-javascript_is_amazing.js
 Prints "JavaScript is amazing"
 
-###### 1-multi_languages.js
+##### 1-multi_languages.js
 Prints 3 lines:
 - "C is fun"
 - "Python is cool"
