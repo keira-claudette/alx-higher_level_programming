@@ -14,7 +14,7 @@ sudo npm install semistandard --global
 
 [![js-semistandard-style](https://raw.githubusercontent.com/standard/semistandard/master/badge.svg)](https://github.com/standard/semistandard)
 # Tasks
-<br>
+
 ##### 0-javascript_is_amazing.js
 Prints "JavaScript is amazing"
 
