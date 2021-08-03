@@ -12,13 +12,13 @@ class Square extends Rectangle {
 
 const Rectangle = require('./4-rectangle');
 
-/*class Square extends Rectangle {
+/* class Square extends Rectangle {
   constructor (size) {
     super();
     this.width = size;
     this.height = size;
   }
-}*/
+} */
 
 class Square extends Rectangle {
   constructor (size) {
