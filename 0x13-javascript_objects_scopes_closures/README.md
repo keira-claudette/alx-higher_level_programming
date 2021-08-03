@@ -1,13 +1,13 @@
 # JavaScript - Objects, Scopes and Closures
 
 ###### Summary
-JavaScript object basics
-Object-oriented JavaScript
-Class - ES6
-super - ES6
-extends - ES6
-Object prototypes
-Inheritance in JavaScript
-Closures
-this/self
-Modern JS
+JavaScript object basics <br>
+Object-oriented JavaScript <br>
+Class - ES6 <br>
+super - ES6 <br>
+extends - ES6 <br>
+Object prototypes <br>
+Inheritance in JavaScript <br>
+Closures <br>
+this/self <br>
+Modern JS <br>
