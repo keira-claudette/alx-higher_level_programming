@@ -1,4 +1,4 @@
-B# Python - Object-relational mapping
+# Python - Object-relational mapping
 
 **Please make sure your MySQL server is in 5.7. If not, please install MySQL 5.7 => Refer to this repo, 0x0D-SQL_introduction directory/README.md**
 
