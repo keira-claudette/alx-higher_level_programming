@@ -1,4 +1,4 @@
-# Python - Object-relational mapping
+B# Python - Object-relational mapping
 
 **Please make sure your MySQL server is in 5.7. If not, please install MySQL 5.7 => Refer to this repo, 0x0D-SQL_introduction directory/README.md**
 
@@ -8,7 +8,7 @@ In the first part, I use the module `MySQLdb` to connect to a MySQL database and
 
 In the second part, I use the module `SQLAlchemy`, and Object Relational Mapper (ORM).
 The purpose of an ORM is to abstract the storage to the usage.
-To illustrate the difference, inspect the differences below.
+To illustrate the difference, inspect the alternatives below.
 
 ###### Without ORM:
 
@@ -42,7 +42,7 @@ You might notice that all of them have the same syntanx, but not always!
 
 For installing `MySQLdb`, you need to have `MySQL` installed.
 
-###### Install `MySQLdb` module version `1.3.x`
+##### Install `MySQLdb` module version `1.3.x`
 
 ```
 $ sudo apt-get install python3-dev
@@ -56,7 +56,7 @@ $ python3
 '1.3.10'
 ```
 
-###### Install `SQLAlchemy` module version `1.2.x`
+##### Install `SQLAlchemy` module version `1.2.x`
 
 ```
 $ sudo pip3 install SQLAlchemy==1.2.5
@@ -78,7 +78,7 @@ moved in a future release.")
 
 ##### 0-select_states.py
 A script that lists all `states` from the database `hbtn_0e_0_usa`:
-- The script takes 3 arguments: mysql `username`, `mysql password` and `database name`
+- The script takes 3 arguments: `mysql username`, `mysql password` and `database name`
 - Module `MySQLdb` (`import MySQLdb`)
 - The script connects to a MySQL server running on `localhost` at port `3306`
 - Results are stored in ascending order by states.id
