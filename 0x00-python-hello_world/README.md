@@ -1,4 +1,38 @@
-## PYTHON
+# PYTHON
+This repository is the beginning of python tasks and learning.
+
+To use a linter on the scripts below, you should install `PEP8`, `version 1.7.* `
+
+### Install PEP8
+
+###### Note: `Pycodestyle` is now the new standard of Python style code.It is based on `pep8`.
+
+##### Install Pip3
+
+```
+$ sudo apt-get install python3-pip
+```
+
+##### Intsall Pep8
+
+```
+$ sudo apt-get install python3-pep8
+$ sudo apt-get install python3-pip
+$ sudo pip3 install -Iv pep8==1.7.0
+
+```
+##### Make sure you have the right version
+```
+$ pep8 --version
+1.7.0
+$
+```
+
+###### Note: If you can’t make it work, please use the "container-on-demand"
+ tool to "PEP8" your files in a pre-configured container.
+
+# Tasks
+
 
 ###### 0-run
 Shell script that runs a Python script
