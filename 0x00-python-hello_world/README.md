@@ -28,8 +28,7 @@ $ pep8 --version
 $
 ```
 
-###### Note: If you can’t make it work, please use the "container-on-demand"
- tool to "PEP8" your files in a pre-configured container.
+###### Note: If you can’t make it work, please use the "container-on-demand" tool to "PEP8" your files in a pre-configured container.
 
 # Tasks
 
