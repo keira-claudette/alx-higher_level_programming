@@ -13,15 +13,20 @@ A script that lists all states from the database hbtn_0e_0_usa.
 
 """
 
-db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
+if __name__ == "__main__":
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
 
-cursor = db.cursor()
+    cursor = db.cursor()
 
-sql = "SELECT * FROM states ORDER BY states.id LIMIT 5"
+    sql = "SELECT * FROM states ORDER BY states.id LIMIT 5"
 
-cursor.execute(sql)
+    cursor.execute(sql)
 
-result = cursor.fetchall()
+    result = cursor.fetchall()
 
-for item in result:
-    print(item)
+    for item in result:
+        print(item)
+
+
+#if __name__ == "__main__"
+# Python only runs this script if file is run directly ,not called via import.
