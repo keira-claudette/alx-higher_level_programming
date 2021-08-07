@@ -13,6 +13,8 @@ A script that takes in an argument and displays all values in the states table
 
 
 if __name__ == "__main__":
+    import sys
+    import MySQLdb
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
 
     cursor = db.cursor()
@@ -26,9 +28,10 @@ if __name__ == "__main__":
             value = value + char
     # sub_query = "SELECT id  FROM states WHERE name = '%s' LIMIT 1" % (value)
 
-    sql = "SELECT name FROM cities WHERE state_id = (SELECT id  FROM states WHERE name = '%s' LIMIT 1)" % (value)
-
-    cursor.execute(sql)
+    cursor.execute("SELECT name FROM cities WHERE\
+                    state_id = (SELECT id  FROM states\
+                    WHERE name = '%s' LIMIT 1)\
+                    " % (value))
     result = cursor.fetchall()
     mystr = ''
     i, j = 0, 0
