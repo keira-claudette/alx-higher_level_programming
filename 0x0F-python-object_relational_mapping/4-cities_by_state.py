@@ -18,3 +18,5 @@ if __name__ == "__main__":
     result = cursor.fetchall()
     for item in result:
         print(item)
+    cursor.close()
+    db.close()

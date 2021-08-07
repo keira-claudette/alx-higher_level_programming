@@ -20,16 +20,23 @@ if __name__ == "__main__":
     for char in sys.argv[4]:
         if (char == "'" or char == '"'):
             continue
-        if (char ==';'):
+        if (char == ';'):
             break
         if (char != ';'):
             value = value + char
+    # sub_query = "SELECT id  FROM states WHERE name = '%s' LIMIT 1" % (value)
 
-    sql = "SELECT * FROM states WHERE name = '%s'" % (value)
+    sql = "SELECT name FROM cities WHERE state_id = (SELECT id  FROM states WHERE name = '%s' LIMIT 1)" % (value)
+
     cursor.execute(sql)
     result = cursor.fetchall()
-    for item in result:
-        print(item)
+    mystr = ''
+    i, j = 0, 0
+    for i in range(len(result)):
+        for j in range(len(result[i])):
+            mystr = mystr + result[i][j] + ', '
+
+    print(mystr[:-2])
 
     cursor.close()
     db.close()

@@ -27,6 +27,9 @@ if __name__ == "__main__":
     for item in result:
         print(item)
 
+    cursor.close()
+    db.close()
+
 
 #if __name__ == "__main__"
 # Python only runs this script if file is run directly ,not called via import.
