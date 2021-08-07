@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 
-import sys
-import MySQLdb
-
 
 """
 Concept tested:  SQL Injection
