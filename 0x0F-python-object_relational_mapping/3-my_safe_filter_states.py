@@ -1,9 +1,5 @@
 #!/usr/bin/python3
 
-import sys
-import MySQLdb
-
-
 """
 Concept tested:  SQL Injection
 
@@ -13,6 +9,9 @@ A script that takes in an argument and displays all values in the states table
 
 
 if __name__ == "__main__":
+    import sys
+    import MySQLdb
+
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
 
     cursor = db.cursor()
@@ -20,7 +19,7 @@ if __name__ == "__main__":
     for char in sys.argv[4]:
         if (char == "'" or char == '"'):
             continue
-        if (char ==';'):
+        if (char == ';'):
             break
         if (char != ';'):
             value = value + char
