@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     cursor = db.cursor()
 
-    sql = "SELECT * FROM states ORDER BY states.id LIMIT 5"
+    sql = "SELECT * FROM states ORDER BY states.id ASC;"
 
     cursor.execute(sql)
 
