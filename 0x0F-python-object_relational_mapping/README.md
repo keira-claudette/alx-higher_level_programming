@@ -1,8 +1,9 @@
 # Python - Object-relational mapping
 
-**Please make sure your MySQL server is in 5.7. If not, please install MySQL 5.7 => Refer to this repo, 0x0D-SQL_introduction directory/README.md**
+**Please make sure your MySQL server is in 5.7. If not, please install MySQL 5.7 => Refer to this repo, [0x0D-SQL_introduction directory/README.md](https://github.com/keira-claudette/alx-higher_level_programming/blob/master/0x0D-SQL_introduction/README.md)**
 
-Linking Databases and Python.
+#### Linking Databases and Python.
+
 In the first part, I use the module `MySQLdb` to connect to a MySQL database and execute my SQL queries.
 In the second part, I use the module `SQLAlchemy`, and Object Relational Mapper (ORM).
 The purpose of an ORM is to abstract the storage to the usage.
