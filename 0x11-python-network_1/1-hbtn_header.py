@@ -11,4 +11,4 @@ req = urllib.request.Request(url)
 with urllib.request.urlopen(req) as response:
     page = response.read()
 response_header = response.info()
-print(dict(response_header)["X-Request-Id"])
+print(dict(response_header).get("X-Request-Id"))
