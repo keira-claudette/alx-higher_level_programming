@@ -5,10 +5,12 @@
 import sys
 import urllib.request
 
-
 url = sys.argv[1]
 req = urllib.request.Request(url)
 with urllib.request.urlopen(req) as response:
     page = response.read()
-response_header = response.info()
+    response_header = response.info()
 print(dict(response_header).get("X-Request-Id"))
+
+if __name__ == "main":
+    pass
