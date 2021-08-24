@@ -1,9 +1,10 @@
 # Python - Network
-## Resources:
-### [        `curl flags`](https://gist.github.com/subfuzion/08c5d85437d5d4f00e58)
-### [	       `Curl manpage`](https://curl.se/docs/manpage.html)
-### [	       `/dev/null`](https://www.journaldev.com/35489/dev-null-in-linux)
+### Resources:
+#### [        `curl flags`](https://gist.github.com/subfuzion/08c5d85437d5d4f00e58)
+#### [	       `Curl manpage`](https://curl.se/docs/manpage.html)
+#### [	       `/dev/null`](https://www.journaldev.com/35489/dev-null-in-linux)
 
+### Files
 ### 0-body_size.sh
 A Bash script that takes in a URL, sends a request to that URL, and displays the
  size of the body of the response
