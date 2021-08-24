@@ -7,10 +7,10 @@ takes in a URL, sends a request to the URL and displays the body of
 if __name__ == "__main__":
     import sys
     import urllib.request
-    import urllib.error
+    from urllib.error import HTTPError
 
-    req = urllib.request.Request(sys.argv[1])
     try:
-        urllib.request.urlopen(req)
-    except urllib.error.HTTPError as e:
+        with urllib.request.urlopen(sys.argv[1]) as response:
+            print(response.read().decode("utf-8", "replace"))
+    except HTTPError as e:
         print("Error code: {}".format(e.code))
