@@ -34,6 +34,8 @@ The team is considering an alternative to replace this module. It is, however re
 
 - ###### [The request module: Simplified HTTP client](https://github.com/request/request)
 
+- ###### [Parsing JSON in js](https://www.google.com/search?q=reading+json+in+javascript&oq=reading+json+i&aqs=chrome.1.69i57j0i20i263i512j0i512l2j0i20i263i512j0i512l5.6718j0j7&sourceid=chrome&ie=UTF-8)
+
 # Files
 - `0-readme.js`: 
 Reads and prints the content of a file.
