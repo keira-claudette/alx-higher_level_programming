@@ -29,6 +29,10 @@ export NODE_PATH=/usr/lib/node_modules
 ###### Note: Request module has been deprecated since February 2020.
 The team is considering an alternative to replace this module. It is, however really simple and powerful a module for practicing web-scraping in JavaScript.
 
+### Concepts
+- ###### [Node.js as a File Server](https://www.w3schools.com/nodejs/nodejs_filesystem.asp)
+
+- ###### [The request module: Simplified HTTP client](https://github.com/request/request)
 
 # Files
 - `0-readme.js`: 
