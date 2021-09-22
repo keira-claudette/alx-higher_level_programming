@@ -1,5 +1,7 @@
 # JavaScript - Web jQuery
 
+**This project explores the functinalities of jQuery. The files explore some DOM manipulations.**
+
 ##### Import jQuery
 ```
 <head>
@@ -15,8 +17,6 @@
 
 
 ###### Note: To check semi-standard compliance use ```semistandard *.js --global $ ```
-
-This project explores the functinalities of jQuery. The files explore some DOM manipulations.
 
 <img src="https://miro.medium.com/max/1400/1*NeKYs9ypQ7jkalNxEX3t9Q.png" width="160" height="auto">
 
