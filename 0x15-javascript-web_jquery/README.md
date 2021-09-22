@@ -19,4 +19,5 @@
 This project explores the functinalities of jQuery. The files explore some DOM manipulations.
 
 <img src="https://miro.medium.com/max/1400/1*NeKYs9ypQ7jkalNxEX3t9Q.png" width="160" height="auto">
+
 ###### JQuery version 3.x
