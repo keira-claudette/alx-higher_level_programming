@@ -12,4 +12,4 @@ SQL - More queries
 - [The Seven Types of SQL Joins](https://tableplus.com/blog/2018/09/a-beginners-guide-to-seven-types-of-sql-joins.html)
 
 
-<img src="https://tableplus.com/assets/images/sql-joins/full-outer-join-no-intersection.png" height=auto width=160/>
+<img src="https://tableplus.com/assets/images/sql-joins/full-outer-join-no-intersection.png" height=auto width=auto/>
