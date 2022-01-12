@@ -1,7 +1,7 @@
 # SQL - Introduction
 To run the srcipts, install MySQL server
 
-## Install MySQL 5.7 on Ubuntu 14.04 LTS
+## Install MySQL Server 5.7 on Ubuntu 14.04 LTS
 ```
     $ echo 'deb http://repo.mysql.com/apt/ubuntu/ trusty mysql-5.7-dmr' | sudo tee -a /etc/apt/sources.list
     $ sudo apt-get update
