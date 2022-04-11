@@ -5,7 +5,7 @@
 #### Linking Databases and Python.
 
 In the first part, I use the module `MySQLdb` to connect to a MySQL database and execute my SQL queries.
-In the second part, I use the module `SQLAlchemy`, and Object Relational Mapper (ORM).
+In the second part, I use the module `SQLAlchemy`, an Object Relational Mapper (ORM).
 The purpose of an ORM is to abstract the storage to the usage.
 To illustrate the difference, inspect the alternatives below.
 ###### Without ORM:
